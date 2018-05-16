@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:onClick="gen"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change password"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="changepass2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="scan1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add movie"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="add"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete movie"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="show2"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="logout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/footer"
+
+            layout="@layout/footer" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:layout_above="@+id/footer"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:hint="username"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/but"
+        android:layout_below="@id/username_input_layout"
+        android:textColor="@android:color/white"
+        android:text="Forgot"
+        android:onClick="forgo"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/but"
+        android:textColor="@android:color/white"
+        android:text="Go Back"
+        android:onClick="back"
+        android:textSize="20sp"
+        />
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        />
+</RelativeLayout>
+
+

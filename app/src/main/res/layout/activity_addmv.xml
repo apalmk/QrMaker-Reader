@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailslayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:theme="@style/AppTheme"
+    android:layout_above="@+id/footer"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/moviename_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/moviename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:hint="Movie name"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/moviename_input_layout">
+    android:checkedButton="@+id/radioUser"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D"
+            android:layout_marginLeft="32dp"/>
+
+        <RadioButton
+            android:id="@+id/radio2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:text="2D" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:textColor="@android:color/white"
+        android:text="Add"
+        android:onClick="add1"
+        android:textSize="20sp"
+        />
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        />
+</RelativeLayout>
+
+

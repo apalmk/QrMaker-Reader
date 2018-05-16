@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QrTicketGen</string>
+    <string name="title_activity_delete">Delete</string>
+    <string name="title_activity_change">change</string>
+</resources>
